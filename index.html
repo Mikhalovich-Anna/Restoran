@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>prostranstvo</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+	    
+		    <body>
+                    <section class="home">
+                        <div class="home_video">
+                            <video src="CSS/back_video.mp4" type="video/mp4" loop autoplay muted>
+                            </video>
+                        </div>
+                        <div class="home_content">
+                        <h1>Prostranstvo</h1>
+                        <p>Ресторан высокой кухни в центре Минска</p>
+                        </div>
+                    </section>
+
+<!--Блок с кнопками-->
+                <div class="block-2">
+                        <table class="contacts" >
+                            <tr>
+                                <td>
+                                    <a href="#Povara">
+                                        <button class="b1">cooks</button>
+                                    </a>	
+                                </td>
+                            
+                                <td>
+                                    <a href="#map">
+                                    <button class="b2">contacts</button>
+                                    </a>
+                                </td>
+                            
+                                <td>
+                                    <form action="https://terrapizza.by/menu" 
+                                    method="get" 
+                                    target="_blank">
+                                    <button class="b3">menu</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+
+<!--Блок с поварами-->
+                <div id="Povara">
+                    <div class="pov-back">
+                         <div class="photo">
+                            <table class="table-photo">
+                                <tr>
+                                    <td>
+                                        <img
+                                        class="milena"
+                                        src="css/IMG/caea215d8888619b76058a6cf97edb544700162e.jpg">
+                                    </td>
+                                    <td>
+                                        <img
+                                        class="peter"
+                                        src="css/IMG/Michelin-stared-chef-Siu-Hin-Chi.jpeg">
+                                    </td>
+                                    <td>
+                                        <img
+                                        class="georg"
+                                        src="css/IMG/Philippe-Joannès-copyright-Georges-Olivier-Kalifa.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                         </div> 
+                         <h2>✨Наши повара получили звезды мишлен✨</h2>
+                         <div class="p1">
+                            <br />
+                            <p class="opisanie">
+                            Для вас будут готовить лучшие из лучших и от всего сердца
+                            человек, профессией которого является приготовление пищи; 
+                            в настоящее время, как правило, на предприятиях общественного питания. 
+                            Готовит супы, вторые блюда, другую пищу. Знает, как правильно хранить 
+                            продукты, готовит разные блюда по рецептам и умеет оформлять приготовленное.
+                            Организует хранение продуктов в соответствии с санитарно-гигиеническими
+                            нормами.</p>
+                        </div>  
+                    </div>  
+                </div>
+
+<!--Блок с отзывами-->
+                <div class="otziv-back">
+                    <table class="otziv">
+                        <tr>
+                            <td>
+                                <img
+                                class="skrin"
+                                src="css/IMG/otziv.png">
+                            </td>   
+                        </tr>
+                    </table>
+                </div>
+
+<!--Блок footer-->
+                <footer class="adresa">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18803.59375612168!2d27.575654952514654!3d53.905992890049454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfbb6da9117f%3A0xe7d30aa15231dbf9!2z0JTQstC-0YDQtdGGINC40YHQutGD0YHRgdGC0LLQsA!5e0!3m2!1sru!2sby!4v1662454194886!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="nomer">
+                        <h1>Contacts:</h1>
+                        <p>+386(34) 778-09-24
+                            <br />
+                        +324(04) 427-55-12
+                        </p>
+                    </div>
+                </footer>
+                <div class="zvonok">
+                    <form class="feedback" method="POST">
+                        <h1>Обратная связь</h1>
+                        <p>тема обращения</p>
+                         <select name="theme" required="required">
+                            <option value="">Выберите вариант</option>
+                            <option>Вопрос по работе ресторана</option>
+                            <option>Забронировать столик</option>
+                            <option>Сотрудничество</option>
+                            <option>Написать отзыв</option>
+                         </select>
+                         <div>Имя</div>
+                         <input type="text" name="name" required="required">
+                         <div>Ваш email</div>
+                        <input type="email" name="email" required="required">
+                         <div class="text_footer">Сообщение</div>
+                        <textarea class="message_1" name="message"></textarea>
+                        <input class="otpravka" type="submit" name="submit_btn" value="Отправить">
+                    </form>
+                </div>
+      </body>      
